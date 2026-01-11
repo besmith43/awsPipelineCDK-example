@@ -6,5 +6,5 @@
 # aws ecr delete-repository --repository-name hello-world-app --force --profile personal
 
 echo "running cdk destroy"
-cdk destroy --profile personal --yes
+cdk destroy --profile personal --yes --all
 
