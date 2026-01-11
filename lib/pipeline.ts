@@ -20,7 +20,7 @@ export class MyPipelineStack extends Stack {
 				// Use a source from CodeCommit, GitHub, etc.
 				input: CodePipelineSource.gitHub('besmith43/awsPipelineCDK-example', 'main', {
 					// Use a connection (recommended for GitHub)
-					authentication: cdk.SecretValue.secretsManager(process.env.github_token ?? 'default-api-key'),
+					// authentication: cdk.SecretValue.secretsManager(process.env.github_token ?? 'default-api-key'),
 				}),
 				commands: [
 					'npm install',
