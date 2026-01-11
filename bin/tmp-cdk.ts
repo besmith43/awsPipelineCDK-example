@@ -7,7 +7,12 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const app = new cdk.App();
-new MyPipelineStack(app, 'Pipeline', {});
+new MyPipelineStack(app, 'Pipeline', {
+  env: {
+    account: process.env.aws_account,
+    region: process.env.aws_pipeline_region,
+  }
+});
 // new TmpCdkStack(app, 'TmpCdkStack', {
 /* If you don't specify 'env', this stack will be environment-agnostic.
  * Account/Region-dependent features and context lookups will not work,
