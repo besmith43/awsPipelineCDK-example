@@ -1,0 +1,11 @@
+{
+  "availability-zones:account=243413538688:region=us-east-2": [
+    "us-east-2a",
+    "us-east-2b",
+    "us-east-2c"
+  ],
+  "hosted-zone:account=243413538688:domainName=besmithaws.click:region=us-east-2": {
+    "Id": "/hostedzone/Z06645633RMXN0DJCB4CQ",
+    "Name": "besmithaws.click."
+  }
+}
